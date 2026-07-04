@@ -33,7 +33,7 @@ WAN ISP-R2	172.16.41.0/30
 WAN ISP-R3	172.16.42.0/30
 Tunnel0 (mGRE)	10.40.40.0/24 (Hub .1 / Spoke1 .2 / Spoke2 .3)
 
-[ INSERTAR CAPTURA DE PANTALLA AQUI: Topologia completa en GNS3 (con nombre y matricula visibles) ]
+
 Explicacion: Captura general de la topologia armada en GNS3, mostrando todos los dispositivos, sus interfaces conectadas, y el recuadro con nombre y matricula del estudiante.
 3. Parametros utilizados
 Parametro	Valor configurado
@@ -49,7 +49,7 @@ Fase DMVPN	Fase 2 (next-hop NO se reescribe hacia el Hub)
 4. Configuracion y explicacion (capturas de pantalla)
 Llave ISAKMP comodin (necesaria para multiples peers)
 crypto isakmp key CiscoVPN123 address 0.0.0.0 0.0.0.0
-[ INSERTAR CAPTURA DE PANTALLA AQUI: Llave ISAKMP comodin (necesaria para multiples peers) ]
+
 Explicacion: A diferencia de las VPN punto a punto, el Hub debe aceptar conexiones IKE de cualquier IP de origen (los spokes), por lo que la llave se asocia a un comodin en vez de una IP fija. Esta misma configuracion se replica en los 3 routers.
 Interfaz Tunnel0 en modo mGRE (Hub)
 interface Tunnel0
